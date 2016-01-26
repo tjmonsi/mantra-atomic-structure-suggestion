@@ -41,7 +41,7 @@ I feel it is a bit hackish at the moment because you need to wrap around the con
 
 If there's a way to map the data from a particular model (like from `Meteor.Collections`) to the parameters of the React UI component without doing an additional wrapper then that would be great. The idea would be something like this.
 
-```
+```javascript
 // Coming from /imports/modules/posts/composers/tracker-post-view.js
 export const trackerPostView = ({context, postId}, onData) => {
   const {Meteor, Collections, Tracker} = context();
